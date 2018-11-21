@@ -6,11 +6,7 @@
 using namespace std;
 
 class Person {
-	string vorname;
-	string familienname;
-	int alter;
-	
-  public:
+public:
 	Person();
 	// alt is a default parameter
 	Person(const string& vn, const string& fn, int alt = 0);
@@ -18,6 +14,12 @@ class Person {
 	string getFamilienname();
 	string getVorname();
 	int getAlter();
+	
+private:
+	string vorname;
+	string familienname;
+	int alter;
+	
 };
 
 Person::Person()
